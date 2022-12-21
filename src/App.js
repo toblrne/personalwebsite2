@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Button, Box, Flex, useColorMode } from '@chakra-ui/react'
+import MainCard from './components/MainCard'
+
 
 function App() {
+  const { colorMode, toggleColorMode } = useColorMode()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Box w="100vw">
+        <Box minW="320px">
+          <Flex justify="space-between" align="center">
+
+            <Box>Ryan Gao</Box>
+            <Button onClick={toggleColorMode}>
+              Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
+            </Button>
+
+          </Flex>
+        </Box>
+      </Box>
+
+
+      <Box border="1px" boxSizing="inherit">
+        <MainCard />
+      </Box>
+    </>
   );
 }
 
