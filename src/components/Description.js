@@ -5,21 +5,10 @@ import { Flex, Image, Text, Box } from '@chakra-ui/react'
 
 const Description = () => {
     return (
-        <Box minW="320px">
-            <Flex align="center" gap="20px">
-                <Text fontSize="24px" fontWeight="bold" border="1px"> Hi, I'm Ryan</Text>
-                <Flex> Resume</Flex>
-            </Flex>
-            <Flex>
-                Links
-            </Flex>
-            <Flex>
-                computer science @ ubc
-            </Flex>
-            <Flex>
-                About
-            </Flex>
-        </Box>
+        <Flex direction="column" minW="320px" align="center">
+            <Text fontSize="48px" fontWeight="bold" border="1px"> Hi, I'm Ryan 👋</Text>
+            <Text fontSize="24px" w="500px" textAlign="center"> I'm a Computer Science student at the University of British Columbia. Interested in full-stack development and medical technology. </Text>
+        </Flex>
     );
 }
 

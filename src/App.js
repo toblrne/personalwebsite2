@@ -7,19 +7,14 @@ function App() {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <>
-      <Box w="100vw">
-        <Box minW="320px">
-          <Flex justify="space-between" align="center">
-
-            <Box>Ryan Gao</Box>
-            <Button onClick={toggleColorMode}>
-              Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
-            </Button>
-
-          </Flex>
-        </Box>
+      <Box w="100vw" minW="320px">
+        <Flex justify="space-between" align="center">
+          <Box>Ryan Gao</Box>
+          <Button onClick={toggleColorMode}>
+            Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
+          </Button>
+        </Flex>
       </Box>
-
 
       <Box border="1px" boxSizing="inherit">
         <MainCard />

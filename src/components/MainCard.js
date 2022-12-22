@@ -1,7 +1,8 @@
 import React from 'react';
-import { Box, Flex, VStack } from '@chakra-ui/react'
+import { Box, Flex, VStack, Text } from '@chakra-ui/react'
 
 import Description from './Description'
+import Projects from './Projects'
 
 
 
@@ -16,25 +17,12 @@ const MainCard = () => {
                 <Description />
             </Box>
 
-
-            <Flex border="2px">
-                Work Experience
-
-
-            </Flex>
-
-            <Flex border="2px">
-                Volunteering
-
-
-            </Flex>
-
-
-            <Flex border="2px">
-                Projects
-
-
-            </Flex>
+            <Box border="1px" w="100vw">
+                <Text fontWeight="semibold" fontSize="28px" textAlign="center"> My Projects </Text>
+                <Flex border="2px">
+                    <Projects />
+                </Flex>
+            </Box>
 
         </VStack>
     );
