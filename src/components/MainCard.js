@@ -18,8 +18,8 @@ const MainCard = () => {
                 <Description />
             </Box>
 
-            <Box w="100vw">
-                <Text fontWeight="semibold" fontSize="28px" textAlign="center"> My Projects </Text>
+            <Box w="100vw" paddingTop="30px">
+                <Text fontWeight="semibold" fontSize="28px" textAlign="center"> Projects </Text>
                 <Flex justify="center" align="center" direction="column">
 
                     {data.map((elem) => (
