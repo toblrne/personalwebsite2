@@ -6,9 +6,9 @@ import MainCard from './components/MainCard'
 function App() {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
-    <>
-      <Box w="100vw" minW="320px">
-        <Flex justify="space-between" align="center">
+    <Box overflow="hidden">
+      <Box w="100vw" minW="320px" overflow="hidden" >
+        <Flex justify="space-between" align="center" m="25px" overflow="hidden">
           <Box>Ryan Gao</Box>
           <Button onClick={toggleColorMode}>
             Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
@@ -16,10 +16,10 @@ function App() {
         </Flex>
       </Box>
 
-      <Box border="1px" boxSizing="inherit">
+      <Box boxSizing="inherit">
         <MainCard />
       </Box>
-    </>
+    </Box>
   );
 }
 

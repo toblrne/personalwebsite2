@@ -6,7 +6,7 @@ import { Flex, Image, Text, Box } from '@chakra-ui/react'
 const Description = () => {
     return (
         <Flex direction="column" minW="320px" align="center">
-            <Text fontSize="48px" fontWeight="bold" border="1px"> Hi, I'm Ryan 👋</Text>
+            <Text fontSize="48px" fontWeight="bold"> Hi, I'm Ryan 👋</Text>
             <Text fontSize="24px" w="500px" textAlign="center"> I'm a Computer Science student at the University of British Columbia. Interested in full-stack development and medical technology. </Text>
         </Flex>
     );
