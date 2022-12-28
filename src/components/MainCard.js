@@ -10,7 +10,8 @@ import data from './data'
 
 const MainCard = () => {
 
-    // https://imagecolorpicker.com/color-code/1a202c
+    
+
 
     return (
         <VStack spacing="12px">

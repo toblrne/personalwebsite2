@@ -1,13 +1,17 @@
 import React from 'react';
-import { Button, Box, Flex, Text, useColorMode } from '@chakra-ui/react'
+import { Button, Box, Flex, Text, useColorMode, useColorModeValue } from '@chakra-ui/react'
 import MainCard from './components/MainCard'
+
 
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode()
+
+  const border = useColorModeValue("#d1d1d1", "gray.800")
+
   return (
-    <Box overflow="hidden"  transitionProperty="background-color" transitionDuration="normal" >
-      <Box w="100vw" minW="320px" overflow="hidden" borderBottom="1px" borderColor="#d1d1d1">
+    <Box overflow="hidden">
+      <Box w="100vw" minW="320px" overflow="hidden" borderBottom="1px" borderColor={border}>
         <Flex justify="space-between" align="center" m="25px" overflow="hidden">
           <Text fontSize="22px">Ryan Gao</Text>
           <Button onClick={toggleColorMode}>
@@ -20,7 +24,7 @@ function App() {
         <MainCard />
       </Box>
 
-      <Flex justify="center"  p="8px" marginTop="25px" backgroundColor="#f3f3f3">
+      <Flex justify="center" p="8px" marginTop="25px" >
         © Ryan Gao 2023
       </Flex>
     </Box>
