@@ -36,7 +36,7 @@ const data = [
         links: "https://wikidate.web.app/"
     },
     { 
-        title: "A Sound Mood [2nd @ XdHacks Mini LA 2020 ]",
+        title: "A Sound Mood [2nd @ XdHacks Mini LA 2020 🏆]",
         image: soundmood,
         description: "A Discord bot application that gives song recommendations based on a user's listening habits.",
         technologies: ["Python", "MongoDB", "Heroku", "Discord.py", "Spotipy"],
@@ -56,6 +56,14 @@ const data = [
 //     technologies: ["React.js", "JavaScript", "Firebase"],
 //     description: "Simple chat app that allows users to send and clear messages. Data persistence implemented using a Firebase Realtime Database.",
 //     links: "https://chatapp-893e3.web.app/"
+// },
+
+// {
+//     title: "Pomo",
+//     image: ...,
+//     technologies: ["TypeScript", "React.js", "ChakraUI", "Express.js", "Node.js", "MongoDB", "Auth0", "Figma"],
+//     description: "Pomodoro google chrome extension with statistics",
+//     links: ...
 // },
 
 export default data;
