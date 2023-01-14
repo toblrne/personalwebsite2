@@ -19,8 +19,8 @@ const Projects = ({ title, image, date, description, links, technologies }) => {
                 <Image w="auto" maxHeight="200px" borderRadius="30px" src={image} />
             </Flex>}
             <Flex direction="column" marginLeft={["0px", "0px", "25px", "25px"]} w="100%">
-                <Text fontSize="20px" fontWeight="bold"> {title} <Link href={links} isExternal> <ExternalLinkIcon paddingBottom="5px" w={7} h={7}/> </Link> </Text>
-                <Text fontSize="18px" lineHeight="25px" paddingTop="15px"> {description} </Text>
+                <Text fontSize="21px" fontWeight="bold"> {title} <Link href={links} isExternal> <ExternalLinkIcon paddingBottom="5px" w={7} h={7}/> </Link> </Text>
+                <Text fontSize="16px" lineHeight="25px" paddingTop="15px" fontWeight="medium"> {description} </Text>
                 <Flex justify="row" paddingTop="10px" flexWrap="wrap"> {technologies.map((elem) => (<Flex fontSize="16px" fontWeight="medium" border="2px" color={textColor} borderColor={borderTech} bg={tech} borderRadius="12px" p="5px" marginRight="10px" marginTop="5px" marginBottom="5px"> {elem} </Flex>))} </Flex>
 
             </Flex>

@@ -10,7 +10,7 @@ const config = {
 }
 
 const fonts = {
-  body: `'Inter', sans-serif`,
+  body: `'-apple-system', 'BlinkMacSystemFont', 'Inter', sans-serif`,
 }
 
 // 3. extend the theme
