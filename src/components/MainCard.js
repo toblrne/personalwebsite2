@@ -15,11 +15,11 @@ const MainCard = () => {
 
     return (
         <VStack spacing="12px">
-            <Box w="100vw">
+            <Flex w="100vw" align="center" justify="center">
                 <Description />
-            </Box>
+            </Flex>
 
-            <Box w="100vw" paddingTop="30px">
+            <Box w="100vw" paddingTop="100px" >
                 <Text fontWeight="semibold" fontSize="28px" textAlign="center"> Projects </Text>
                 <Flex justify="center" align="center" direction="column">
 
