@@ -11,7 +11,7 @@ const data = [
         title: "Pomo",
         image: pomo,
         technologies: ["TypeScript", "React.js", "Express.js", "Node.js", "MongoDB", "Auth0", "Insomnia", "ChakraUI","Figma"],
-        description: "Full stack MERN web app that allows users to run Pomodoro cycles with customizable durations and settings. Built because I hate ads and wanted features that were paid on other apps.",
+        description: "Full stack MERN web app with user authentication through Auth0 that allows users to run Pomodoro cycles, view statistics, and customize settings. Built because I hate ads and wanted features that were paid on other apps. Check it out in the link!",
         links: "https://github.com/toblrne/pomo"
     },
     {
